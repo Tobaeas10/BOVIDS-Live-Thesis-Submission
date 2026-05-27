@@ -1,11 +1,13 @@
 # Thesis Submision Note
-This is an anonymized copy of the BOVIDS GitHub repository right before thesis submission. The main contribution of the thesis can be found in `local_pc/run_stream_service.py`.
+This is an anonymized copy made shortly before thesis submission which contains the same code as [the private GitHub fork](https://github.com/Tobaeas10/BOVIDS2) created for the creation of BOVIDS-Live. [The main BOVIDS 2 GitHub repository](https://github.com/Klimroth/BOVIDS2) and therefore all its forks are currently private to protect the privacy of developers and zoos. However, [the BOVIDS 1 repository](https://github.com/Klimroth/BOVIDS) is public.
+
+The main contribution of the thesis can be found in `local_pc/run_stream_service.py`.
 
 Other files have also been created an implemented by me, including `bovids_live_test_stream_management_script.py`, `thesis_tests.py`, `status_monitor_for_BOVIDS_Live.py`, the automatic installers and start shortcuts in the base directory as well as all stream-related testing .xlsx's.
 
 A list of other changed files I co-authored is: `action_classification.py`, `image_manipulation.py`, `object_detection.py` and `post_processor.py`.
 
-To actually test BOVIDS-Live, you will need videos of within a zoo enclosure which are not included here due to data limits. Email `tobias.weiss@tuhh.de` to request access to them. Alternatively, just put any two videos in `/server/bovids_v2/test/active videos/` and start BOVIDS-Live by running `run_BOVIDS2_in_stream_mode.bat`
+To actually test BOVIDS-Live, you will need videos of within a zoo enclosure which are not included here due to data limits. Email `tobias.weiss@tuhh.de` to request access to them. Alternatively, just put any two videos in `/server/bovids_v2/test/active videos/` and start BOVIDS-Live by running `run_BOVIDS2_in_stream_mode.bat`. Also, you will need the object detection and action classification models. These and other large files omitted here can be downloaded from [my personal Google Drive](https://drive.google.com/drive/folders/1tS7XqblS-QXZOJGFq0a3dbIcM12e39cR?usp=sharing).
 
 Thank you for taking the time to read this.
 
