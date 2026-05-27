@@ -1,0 +1,48 @@
+conda update conda
+conda create -n "bov2" --channel=conda-forge python scikit-image opencv moviepy numpy pandas openpyxl tqdm spyder matplotlib 
+conda activate bov2
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -c conda-forge
+pip install -r "F:/GitHub Repositories/BOVIDS2/server/bovids_v2/docs/requirements_yolov8.txt"
+pip install ultralytics
+
+# maybe check wheter globally cuda 11.7 is avaiable in ubuntu
+- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+
+
+labelme:
+- save image information wegmachen (sonst werden die dateien sehr groß)
+
+
+1. Deinstallieren der Nvidia-Treiber / Cuda Toolkit / Anaconda (falls vorhanden, auf jeden Fall Neustart durchführen)
+
+2. Installieren des GPU-Treibers (Windows 11)
+RTX 2060 / RTX 2070 / RTX 2080: https://www.nvidia.de/download/driverResults.aspx/227415/de
+RTX 3060 / RTX 3070 / RTX 3080: https://www.nvidia.de/download/driverResults.aspx/227415/de
+RTX 4060 / RTX 4070 / RTX 4080: https://www.nvidia.de/download/driverResults.aspx/227415/de
+
+Quadro RTX 4000, Quadro RTX 5000, Quadro RTX 6000, Quadro RTX 8000: https://www.nvidia.de/download/driverResults.aspx/225996/de
+RTX A2000, RTX A4000, RTX A5000, RTX A6000: https://www.nvidia.de/download/driverResults.aspx/225996/de
+RTX 4000/5000/6000 Ada: https://www.nvidia.de/download/driverResults.aspx/225996/de
+
+3. Installieren des CUDA-Toolkits: https://developer.nvidia.com/cuda-12-1-1-download-archive
+
+4. Installation der BOVIDS-Umgebung
+
+conda update conda
+conda create -n "bov2" --channel=conda-forge python=3.10 scikit-image opencv moviepy numpy pandas openpyxl tqdm spyder matplotlib 
+conda activate bov2
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install -r "F:/GitHub Repositories/BOVIDS2/server/bovids_v2/docs/requirements_yolov8.txt"
+pip install ultralytics
+
+Versionsübersicht:
+Python 3.10
+Treiber GPU: siehe oben
+Cuda Toolkit 12.1
+
+
+
+
+
+
+

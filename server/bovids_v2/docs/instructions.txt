@@ -1,0 +1,7 @@
+config/
+- poly_trunc/: folder contains images (jpg) and corresponding labelme files (xml), each image has as the name the enclosure ID it belongs to. Any xml file contains at most two types of labels: "truncation" and "black_region".
+- enclosure_information.xlsx: rows enclosure_id, individual_ids (multiple given with ;), object_detector (relative path), recording_start (integer), recording_end (integer), video_streams (relative paths, multiple given with ;, correct order)
+- postprocessing.csv
+- boris_information.xlsx: mapping of enclosure_id, individual_id and the name in the boris evaluation file, the name of the time, subject and action column. Necessary to use scripts/boris_to_csv.py
+
+
